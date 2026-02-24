@@ -300,6 +300,14 @@ AVAILABLE_MODELS = [
         is_inference_model=True,
     ),
     AvailableModelOption(
+        id="anthropic/claude-opus-4-6-20250514",
+        name="Claude Opus 4.6",
+        description="Anthropic's most powerful model for complex reasoning and analysis",
+        provider="anthropic",
+        is_chat_model=True,
+        is_inference_model=False,
+    ),
+    AvailableModelOption(
         id="anthropic/claude-sonnet-4-20250514",
         name="Claude Sonnet 4",
         description="Faster, more efficient Claude model for code generation",
@@ -901,6 +909,7 @@ class ProviderService:
             "claude-3-opus",
             "claude-3-haiku",
             "claude-sonnet-4",
+            "claude-opus",
             # Google models
             "gemini-pro-vision",
             "gemini-1.5",
